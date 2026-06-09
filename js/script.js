@@ -53,7 +53,7 @@ formulario.addEventListener("submit", function (evento) {
 
 const perguntas = [
     {
-        pergunta: "Qual é o principal objetivo do AlertaOrbit?",
+        pergunta: "Qual é o principal objetivo do HydroAlert?",
         respostas: ["Vender sensores", "Prevenir enchentes", "Criar jogos", "Controlar satélites"],
         correta: 1
     },
@@ -93,8 +93,8 @@ const perguntas = [
         correta: 3
     },
     {
-        pergunta: "Qual linguagem foi usada para a interatividade?",
-        respostas: ["JavaScript", "Python", "C++", "SQL"],
+        pergunta: "Qual recurso ajuda a acompanhar áreas de risco?",
+        respostas: ["Monitoramento", "Desenho manual", "Música", "Pintura"],
         correta: 0
     },
     {

@@ -30,7 +30,7 @@ html {
 }
 
 body {
-    background-color: var(--color-dark);
+    background-color: var(--color-light);
 }
 
 ul,
@@ -171,7 +171,6 @@ a:hover {
 }
 
 .clara {
-    background-color: var(--color-light);
     color: var(--color-dark);
 }
 
@@ -262,7 +261,7 @@ a:hover {
 }
 
 .rodape {
-    background-color: #030914;
+    background-color: var(--color-dark);
     color: var(--color-light);
     padding: var(--spacing-lg);
     display: flex;
@@ -324,7 +323,6 @@ a:hover {
 }
 
 .slideshow-section {
-    background-color: var(--color-light);
     color: var(--color-dark);
     padding: var(--spacing-lg);
     display: flex;
@@ -334,11 +332,11 @@ a:hover {
     flex-wrap: wrap;
 }
 
-.slideshow-section .texto-webdev h2 {
+.slideshow-section h2 {
     color: var(--color-blue);
 }
 
-.slideshow-section .texto-webdev p {
+.slideshow-section p {
     color: var(--color-gray);
 }
 
@@ -440,7 +438,6 @@ a:hover {
 }
 
 .quiz-section {
-    background-color: var(--color-light);
     color: var(--color-dark);
     padding: var(--spacing-lg);
     display: flex;
@@ -450,18 +447,18 @@ a:hover {
     flex-wrap: wrap;
 }
 
-.quiz-section .texto-webdev h2 {
+.quiz-section h2 {
     color: var(--color-blue);
 }
 
-.quiz-section .texto-webdev p {
+.quiz-section p {
     color: var(--color-gray);
 }
 
 .quiz-card {
     width: 45%;
     min-width: 300px;
-    background-color: #ffffff;
+    background-color: var(--color-light);
     padding: var(--spacing-md);
     border-radius: 18px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, .16);
@@ -527,6 +524,14 @@ a:hover {
 
 .tema-laranja {
     background-color: orange;
+}
+
+.tema-azul h2, .tema-escuro h2, .tema-laranja h2 {
+    color: cyan;
+}
+
+.tema-azul p, .tema-escuro p, .tema-laranja p {
+    color: var(--color-light);
 }
 
 @keyframes viewAnimation {
