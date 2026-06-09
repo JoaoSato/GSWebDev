@@ -1,0 +1,364 @@
+@font-face {
+    font-family: Quicksand;
+    src: url(../fonts/Quicksand-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --height-full: 100vh;
+    --color-light: #f4f8fb;
+    --color-dark: #07111f;
+    --color-blue: #0a5c8f;
+    --color-blue-light: #42c5ff;
+    --color-blue-alpha: rgb(66, 197, 255, .22);
+    --color-card: #102235;
+    --color-gray: #6f8798;
+    --spacing-sm: 10px;
+    --spacing-md: 20px;
+    --spacing-lg: 30px;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Quicksand;
+    background-color: var(--color-dark);
+}
+
+body {
+    background-color: var(--color-dark);
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    color: var(--color-light);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color .4s;
+}
+
+a:hover {
+    color: var(--color-blue-light);
+}
+
+.hero {
+    color: var(--color-light);
+    background-image: linear-gradient(to top, rgba(7, 17, 31, .92), rgba(10, 92, 143, .40)), url(../images/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: var(--height-full);
+    background-attachment: fixed;
+}
+
+.header-hero {
+    min-height: 100px;
+    padding-inline: var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+}
+
+.header-hero h1 {
+    font-size: 28px;
+    color: var(--color-light);
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.list a {
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 100px;
+    background-color: rgba(244, 248, 251, .08);
+}
+
+.cta {
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+    text-align: center;
+    padding: var(--spacing-lg);
+}
+
+.cta h2 {
+    width: 75%;
+    font-size: 8vmin;
+    text-wrap: balance;
+}
+
+.cta p {
+    width: 60%;
+    text-wrap: balance;
+    font-weight: 600;
+    line-height: 1.6;
+    color: var(--color-light);
+}
+
+.btn {
+    border: 2px solid var(--color-blue-light);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: 100px;
+    background-color: var(--color-blue-alpha);
+    transition: background-color .4s;
+}
+
+.btn:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.intro {
+    background-color: var(--color-dark);
+    padding: var(--spacing-lg);
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30%;
+    color: var(--color-light);
+    background-color: var(--color-card);
+    padding: var(--spacing-md);
+    border-radius: 18px;
+    box-shadow: inset 1px 1px 10px var(--color-blue-alpha);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    text-align: center;
+}
+
+.card i {
+    color: var(--color-blue-light);
+    font-size: 32px;
+}
+
+.card p {
+    color: var(--color-light);
+    line-height: 1.5;
+}
+
+.conteudo-section {
+    min-height: var(--height-full);
+    padding: var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-lg);
+}
+
+.clara {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+.escura {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+.texto {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.texto h2 {
+    font-size: 6vmin;
+    color: var(--color-blue);
+}
+
+.escura .texto h2 {
+    color: var(--color-blue-light);
+}
+
+.texto p {
+    font-size: 20px;
+    line-height: 1.6;
+    text-wrap: balance;
+}
+
+.imagem {
+    width: 38%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem img {
+    width: 100%;
+    aspect-ratio: 16/11;
+    object-fit: fill;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .22);
+    animation: viewAnimation both;
+    animation-timeline: view(70% 20%);
+}
+
+.cards-section {
+    width: 42%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.mini-card {
+    width: 45%;
+    min-height: 190px;
+    background-color: var(--color-card);
+    color: var(--color-light);
+    padding: var(--spacing-md);
+    border-radius: 18px;
+    box-shadow: inset 1px 1px 10px var(--color-blue-alpha);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    text-align: center;
+    filter: grayscale(.4);
+    transition: .4s;
+}
+
+.mini-card:hover {
+    scale: 1.04;
+    filter: grayscale(0);
+}
+
+.mini-card i {
+    color: var(--color-blue-light);
+    font-size: 34px;
+}
+
+.mini-card p {
+    color: var(--color-light);
+    line-height: 1.5;
+}
+
+.rodape {
+    background-color: #030914;
+    color: var(--color-light);
+    padding: var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+}
+
+.rodape p {
+    color: var(--color-light);
+    background-color: rgba(244, 248, 251, .08);
+    padding: 8px 12px;
+    border-radius: 100px;
+}
+
+@keyframes viewAnimation {
+    from {
+        opacity: 0;
+        transform: scale(.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media(width <=900px) {
+    .header-hero {
+        flex-direction: column;
+        justify-content: center;
+        padding-block: var(--spacing-md);
+    }
+
+    .cta h2 {
+        width: 95%;
+    }
+
+    .cta p {
+        width: 90%;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+    .conteudo-section {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .texto {
+        width: 90%;
+        text-align: center;
+    }
+
+    .imagem {
+        width: 80%;
+    }
+
+    .imagem img {
+        animation: none;
+    }
+
+    .cards-section {
+        width: 90%;
+    }
+
+    .rodape {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media(width <=600px) {
+    .list {
+        gap: var(--spacing-md);
+    }
+
+    .list a {
+        font-size: 15px;
+        padding: 7px 9px;
+    }
+
+    .cta h2 {
+        font-size: 11vmin;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .imagem {
+        width: 95%;
+    }
+
+    .mini-card {
+        width: 90%;
+    }
+}
