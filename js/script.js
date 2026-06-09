@@ -158,22 +158,22 @@ mostrarPergunta();
 
 const botaoTemaAzul = document.querySelector("#tema-azul");
 const botaoTemaEscuro = document.querySelector("#tema-escuro");
-const botaoTemaClaro = document.querySelector("#tema-claro");
+const botaoTemaLaranja = document.querySelector("#tema-laranja");
 
 botaoTemaAzul.addEventListener("click", function () {
     document.body.classList.remove("tema-escuro");
-    document.body.classList.remove("tema-claro");
+    document.body.classList.remove("tema-laranja");
     document.body.classList.add("tema-azul");
 });
 
 botaoTemaEscuro.addEventListener("click", function () {
     document.body.classList.remove("tema-azul");
-    document.body.classList.remove("tema-claro");
+    document.body.classList.remove("tema-laranja");
     document.body.classList.add("tema-escuro");
 });
 
-botaoTemaClaro.addEventListener("click", function () {
+botaoTemaLaranja.addEventListener("click", function () {
     document.body.classList.remove("tema-azul");
     document.body.classList.remove("tema-escuro");
-    document.body.classList.add("tema-claro");
+    document.body.classList.add("tema-laranja");
 });
