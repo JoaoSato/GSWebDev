@@ -5,8 +5,7 @@ const botaoProximo = document.querySelector("#proximo");
 const imagens = [
     "./images/enchente.png",
     "./images/satelite.png",
-    "./images/sensor.png",
-    "./images/cidade.png"
+    "./images/sensor.png"
 ];
 
 let imagemAtual = 0;
